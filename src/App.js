@@ -1,5 +1,6 @@
 import './App.css';
 import { useState, useEffect } from 'react';
+import Crypto from './components/Crypto';
 
 function App() {
 
@@ -15,13 +16,16 @@ function App() {
     })
   }, []);
 
+  console.log(coins.name)
+
   return (
     <div className="App">
-      <ul>
-        {coins.map((coin) => (
-          <li key={coin.id}>{coin.name}</li>
-        ))}
-      </ul>
+      <div className='search'>
+        <h1 className='text'>Search a currency</h1>
+        <form>
+          <input type='text' placeholder='Search' className='input' />
+        </form>
+      </div>
     </div>
   );
 }
