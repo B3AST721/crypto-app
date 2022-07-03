@@ -1,6 +1,6 @@
 import './App.css';
 import { useState, useEffect } from 'react';
-import Crypto from './components/Crypto';
+import Crypto from '/home/jaheel/crypto-app/src/Crypto.js';
 
 function App() {
 
