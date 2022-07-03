@@ -1,5 +1,5 @@
 import React from 'react';
-import '/home/jaheel/crypto-app/src/Crypto.css';
+import '/home/jaheel/crypto-app/src/components/Crypto.css';
 
 function Crypto({ name, image, symbol, price, volume, priceChange, marketcap }) {
   return (
