@@ -2,6 +2,9 @@
   "name": "crypto-app",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=50.9"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
@@ -10,6 +13,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
+    "styled-components": "^5.3.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -17,7 +21,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build",
+    "requirements-check": "babel-node check-version.js",
+    "postinstall": "npm run requirements-check"
   },
   "eslintConfig": {
     "extends": [
