@@ -23,7 +23,8 @@
     "eject": "react-scripts eject",
     "heroku-postbuild": "npm run build",
     "requirements-check": "babel-node check-version.js",
-    "postinstall": "npm run requirements-check"
+    "postinstall": "npm run requirements-check",
+    "babel-cli": "babel --version"
   },
   "eslintConfig": {
     "extends": [
@@ -42,5 +43,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.18.6",
+    "@babel/core": "^7.18.6"
   }
 }
